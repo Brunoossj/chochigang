@@ -1,0 +1,102 @@
+2025/12/24 19:08:12 logtail started
+2025/12/24 19:08:12 Program starting: v1.80.2-t62b8bf6a0-g3c35ee987, Go 1.23.5: []string{"./tailscaled"}
+2025/12/24 19:08:12 LogID: 18ca599ee8476ecf940b7f2953aca405753568edff59238b4e8d6d9bb4f32b85
+2025/12/24 19:08:12 logpolicy: using system state directory "/var/lib/tailscale"
+2025/12/24 19:08:12 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2025/12/24 19:08:12 dns: [rc=resolved resolved=not-in-use ret=direct]
+2025/12/24 19:08:12 dns: using "direct" mode
+2025/12/24 19:08:12 dns: using *dns.directManager
+2025/12/24 19:08:12 wgengine.NewUserspaceEngine(tun "tailscale0") ...
+2025/12/24 19:08:12 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2025/12/24 19:08:12 dns: [rc=resolved resolved=not-in-use ret=direct]
+2025/12/24 19:08:12 dns: using "direct" mode
+2025/12/24 19:08:12 dns: using *dns.directManager
+2025/12/24 19:08:12 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.0.231/16 llu6]} v4=true v6=false}
+2025/12/24 19:08:12 onPortUpdate(port=56047, network=udp6)
+2025/12/24 19:08:12 router: using firewall mode pref 
+2025/12/24 19:08:12 router: default choosing iptables
+2025/12/24 19:08:12 router: netfilter running in iptables mode v6 = true, v6filter = true, v6nat = true
+2025/12/24 19:08:12 onPortUpdate(port=47298, network=udp4)
+2025/12/24 19:08:12 magicsock: disco key = d:12d19e924a0bf736
+2025/12/24 19:08:12 Creating WireGuard device...
+2025/12/24 19:08:12 Bringing WireGuard device up...
+2025/12/24 19:08:12 Bringing router up...
+2025/12/24 19:08:12 external route: up
+2025/12/24 19:08:12 Clearing router settings...
+2025/12/24 19:08:12 Starting network monitor...
+2025/12/24 19:08:12 Engine created.
+2025/12/24 19:08:12 monitor: [unexpected] network state changed, but stringification didn't: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.0.231/16 llu6]} v4=true v6=false}
+2025/12/24 19:08:12 monitor: [unexpected] old: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.0.231/16","fe80::7e1e:52ff:fed6:6fbe/64"],"lo":["127.0.0.1/8","::1/128"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkKV5Dhk","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5S1m++","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2025/12/24 19:08:12 monitor: [unexpected] new: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.0.231/16","fe80::7e1e:52ff:fed6:6fbe/64"],"lo":["127.0.0.1/8","::1/128"],"tailscale0":["fe80::52bb:5139:75c5:c6fb/64"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkKV5Dhk","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5S1m++","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""},"tailscale0":{"Index":4,"MTU":1280,"Name":"tailscale0","HardwareAddr":null,"Flags":57,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2025/12/24 19:08:12 pm: using backend prefs for "profile-d4d2": Prefs{ra=false dns=true want=true routes=[] statefulFiltering=false nf=on update=check Persist{o=, n=[oNzJY] u="lachochigang@gmail.com"}}
+2025/12/24 19:08:12 LinkChange: major, rebinding. New state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.0.231/16 llu6]} v4=true v6=false}
+2025/12/24 19:08:12 logpolicy: using system state directory "/var/lib/tailscale"
+2025/12/24 19:08:12 onPortUpdate(port=56047, network=udp6)
+2025/12/24 19:08:12 onPortUpdate(port=47298, network=udp4)
+2025/12/24 19:08:12 Rebind; defIf="eth0", ips=[10.0.0.231/16 fe80::7e1e:52ff:fed6:6fbe/64]
+2025/12/24 19:08:12 magicsock: 0 active derp conns
+2025/12/24 19:08:12 monitor: gateway and self IP changed: gw=10.0.0.1 self=10.0.0.231
+2025/12/24 19:08:12 got LocalBackend in 45ms
+2025/12/24 19:08:12 Start
+2025/12/24 19:08:12 Backend: logs: be:18ca599ee8476ecf940b7f2953aca405753568edff59238b4e8d6d9bb4f32b85 fe:
+2025/12/24 19:08:12 control: client.Login(0)
+2025/12/24 19:08:12 health(warnable=warming-up): error: Tailscale is starting. Please wait.
+2025/12/24 19:08:12 control: doLogin(regen=false, hasUrl=false)
+2025/12/24 19:08:13 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
+2025/12/24 19:08:13 control: RegisterReq: onode= node=[oNzJY] fup=false nks=false
+2025/12/24 19:08:13 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
+2025/12/24 19:08:13 control: netmap: got new dial plan from control
+2025/12/24 19:08:13 health(warnable=not-in-map-poll): ok
+2025/12/24 19:08:13 active login: lachochigang@gmail.com
+2025/12/24 19:08:13 Switching ipn state NoState -> Starting (WantRunning=true, nm=true)
+2025/12/24 19:08:13 magicsock: SetPrivateKey called (init)
+2025/12/24 19:08:13 wgengine: Reconfig: configuring userspace WireGuard config (with 0/8 peers)
+2025/12/24 19:08:13 wgengine: Reconfig: configuring router
+2025/12/24 19:08:13 wgengine: Reconfig: configuring DNS
+2025/12/24 19:08:13 dns: Set: {DefaultResolvers:[] Routes:{tail89c2f5.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail89c2f5.ts.net.] Hosts:9}
+2025/12/24 19:08:13 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:9 LocalDomains:[tail89c2f5.ts.net.]+65arpa, cloud="azure"}
+2025/12/24 19:08:13 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tail89c2f5.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
+2025/12/24 19:08:13 rename of "/etc/resolv.conf" to "/etc/resolv.pre-tailscale-backup.conf" failed (rename /etc/resolv.conf /etc/resolv.pre-tailscale-backup.conf: device or resource busy), falling back to copy+delete
+2025/12/24 19:08:13 restarted resolved after 5ms
+2025/12/24 19:08:13 peerapi: serving on http://100.89.191.44:37561
+2025/12/24 19:08:13 peerapi: serving on http://[fd7a:115c:a1e0::cf01:bf5d]:44059
+2025/12/24 19:08:13 magicsock: home DERP changing from derp-0 [0ms] to derp-27 [5ms]
+2025/12/24 19:08:13 magicsock: home is now derp-27 (iad)
+2025/12/24 19:08:13 magicsock: adding connection to derp-27 for home-keep-alive
+2025/12/24 19:08:13 magicsock: 1 active derp conns: derp-27=cr0s,wr0s
+2025/12/24 19:08:13 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#27 portmap= link="" firewallmode="ipt-default"}
+2025/12/24 19:08:13 derphttp.Client.Connect: connecting to derp-27 (iad)
+2025/12/24 19:08:13 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
+2025/12/24 19:08:13 magicsock: endpoints changed: 135.237.130.225:35848 (stun), 10.0.0.231:47298 (local), 172.17.0.1:47298 (local)
+2025/12/24 19:08:13 health(warnable=warming-up): ok
+2025/12/24 19:08:13 health(warnable=no-derp-connection): ok
+2025/12/24 19:08:13 health(warnable=no-derp-connection): ok
+2025/12/24 19:08:14 magicsock: derp-27 connected; connGen=1
+2025/12/24 19:08:14 health(warnable=no-derp-connection): ok
+2025/12/24 19:08:14 [RATELIMIT] format("health(warnable=%s): ok")
+2025/12/24 19:10:43 wgengine: Reconfig: [g7tjg] changed from "discokey:f5f810c50ddf047985ce3ec75a1485dd8dc620b3296b6bdf90c8547d58072459" to "discokey:f8ca5985fa6fa8a563274c474d7fa07f10a46bc110cb120eecbc175e1414f679"
+2025/12/24 19:10:50 wgengine: idle peer [g7tjg] now active, reconfiguring WireGuard
+2025/12/24 19:10:50 wgengine: Reconfig: configuring userspace WireGuard config (with 1/8 peers)
+2025/12/24 19:10:50 magicsock: disco: node [g7tjg] d:f8ca5985fa6fa8a5 now using 170.233.92.71:41641 mtu=1360 tx=173407715de5
+2025/12/24 19:11:45 wgengine: idle peer [wNOE5] now active, reconfiguring WireGuard
+2025/12/24 19:11:45 wgengine: Reconfig: configuring userspace WireGuard config (with 2/8 peers)
+2025/12/24 19:11:45 magicsock: disco: node [wNOE5] d:ad5599005125d341 now using 181.85.159.19:41641 mtu=1360 tx=75e08b81607a
+2025/12/24 19:12:09 wgengine: Reconfig: [cTxb0] changed from "discokey:62b9162bf2452dd4e258d7c4d5c3ce22d5aeb1a18d19e370073123bbbdba7928" to "discokey:454c5724338dd04952c392b50d0bd2168323ee306d32fd7314442d38a98f181e"
+2025/12/24 19:13:06 wgengine: idle peer [cTxb0] now active, reconfiguring WireGuard
+2025/12/24 19:13:06 wgengine: Reconfig: configuring userspace WireGuard config (with 3/8 peers)
+2025/12/24 19:13:06 magicsock: disco: node [cTxb0] d:454c5724338dd049 now using 190.224.250.19:41641 mtu=1360 tx=f24ed4b196ed
+2025/12/24 19:14:45 Received error: PollNetMap: unexpected EOF
+2025/12/24 19:14:45 control: controlhttp: forcing port 443 dial due to recent noise dial
+2025/12/24 19:14:46 control: controlhttp: forcing port 443 dial due to recent noise dial
+2025/12/24 19:14:46 control: netmap: got new dial plan from control
+2025/12/24 19:51:32 magicsock: adding connection to derp-11 for [g7tjg]
+2025/12/24 19:51:32 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-27=cr43m0s,wr38m0s
+2025/12/24 19:51:32 derphttp.Client.Recv: connecting to derp-11 (sao)
+2025/12/24 19:51:32 magicsock: derp-11 connected; connGen=1
+2025/12/24 19:52:32 magicsock: closing connection to derp-11 (idle), age 1m0s
+2025/12/24 19:52:32 magicsock: 1 active derp conns: derp-27=cr44m0s,wr39m0s
+2025/12/24 19:52:32 magicsock: adding connection to derp-11 for [g7tjg]
+2025/12/24 19:52:32 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-27=cr44m0s,wr39m0s
+2025/12/24 19:52:32 derphttp.Client.Recv: connecting to derp-11 (sao)
+2025/12/24 19:52:32 magicsock: derp-11 connected; connGen=1
+2025/12/24 19:57:24 magicsock: derp-11 does not know about peer [cTxb0], removing route
